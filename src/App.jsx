@@ -133,7 +133,7 @@ function App() {
           <ul className=" grid grid-cols-2  gap-5">
             <li className=" border-2 rounded-md mb-7 pb-3 ">
               <img
-                src="../public/arrow-up-right-svgrepo-com.svg"
+                src="/arrow-up-right-svgrepo-com.svg"
                 className=" w-5 h-7 ml-36 max-md:ml-28"
                 alt=""
               />
@@ -146,7 +146,7 @@ function App() {
             </li>
             <li className=" border-2 rounded-md mb-7 pb-3 ">
               <img
-                src="../public/arrow-up-right-svgrepo-com.svg"
+                src="/arrow-up-right-svgrepo-com.svg"
                 className=" w-5 h-7 ml-36 max-md:ml-28"
                 alt=""
               />{" "}
@@ -157,7 +157,7 @@ function App() {
             </li>
             <li className=" border-2 rounded-md -mt-6 mb-16 pb-3 ">
               <img
-                src="../public/arrow-up-right-svgrepo-com.svg"
+                src="/arrow-up-right-svgrepo-com.svg"
                 className=" w-5 h-7 ml-36 max-md:ml-28"
                 alt=""
               />{" "}
@@ -166,7 +166,7 @@ function App() {
             </li>
             <li className=" border-2 rounded-md -mt-7 mb-20 pb-3 ">
               <img
-                src="../public/arrow-up-right-svgrepo-com.svg"
+                src="/arrow-up-right-svgrepo-com.svg"
                 className=" w-5 h-7 ml-36 max-md:ml-28"
                 alt=""
               />
@@ -190,7 +190,7 @@ function App() {
         <ul className=" lg:flex justify-center gap-5 mt-7  ">
           <li className=" border-2 max-md:mb-5    rounded-md p-4">
             <img
-              src="../public/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
               className=" lg:w-52 lg:h-44  rounded-md"
               alt=""
             />
@@ -202,7 +202,7 @@ function App() {
           </li>
           <li className=" border-2   max-md:mb-5     rounded-md p-4  ">
             <img
-              src="../public/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
               className=" lg:w-52 lg:h-44   rounded-md"
               alt=""
             />
@@ -214,7 +214,7 @@ function App() {
           </li>
           <li className=" border-2  rounded-lg    p-4 ">
             <img
-              src="../public/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
               className=" lg:w-52 lg:h-44    rounded-md "
               alt=""
             />
@@ -238,7 +238,7 @@ function App() {
         <ul className=" lg:grid grid-cols-3 gap-y-4 lg:ml-7 mt-7  ">
           <li className=" border-2 max-md:mb-5  lg:mr-10   rounded-md p-4">
             <img
-              src="../public/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
               className=" lg:w-80 lg:h-52   rounded-md"
               alt=""
             />
@@ -257,7 +257,7 @@ function App() {
           </li>
           <li className=" border-2 lg:mr-10    max-md:mb-5     rounded-md p-4  ">
             <img
-              src="../public/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
               className=" lg:w-80 lg:h-52   rounded-md"
               alt=""
             />
@@ -276,7 +276,7 @@ function App() {
           </li>
           <li className=" border-2 lg:mr-10   rounded-lg    p-4 ">
             <img
-              src="../public/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
               className=" lg:w-80 lg:h-52    rounded-md "
               alt=""
             />
@@ -295,7 +295,7 @@ function App() {
           </li>
           <li className=" border-2  rounded-lg lg:mr-10     p-4 ">
             <img
-              src="../public/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
               className=" lg:w-80 lg:h-52   rounded-md "
               alt=""
             />
@@ -314,7 +314,7 @@ function App() {
           </li>
           <li className=" border-2  rounded-lg lg:mr-10    p-4 ">
             <img
-              src="../public/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
               className=" lg:w-80 lg:h-52    rounded-md "
               alt=""
             />
@@ -333,7 +333,7 @@ function App() {
           </li>
           <li className=" border-2  rounded-lg lg:mr-10     p-4 ">
             <img
-              src="../public/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
               className=" lg:w-80 lg:h-52    rounded-md "
               alt=""
             />
@@ -367,7 +367,7 @@ function App() {
           <li className=" border-2 rounded-md  mb-7 pb-3 ">
             <div className=" flex justify-between pr-4 pl-4 pt-3">
               <img
-                src="../public/arrow-up-right-svgrepo-com.svg"
+                src="/arrow-up-right-svgrepo-com.svg"
                 className=" w-7 h-7 "
                 alt=""
               />
@@ -385,7 +385,7 @@ function App() {
           <li className=" border-2 rounded-md mb-7 pb-3 ">
             <div className=" flex justify-between pr-4 pl-4 pt-3">
               <img
-                src="../public/arrow-up-right-svgrepo-com.svg"
+                src="/arrow-up-right-svgrepo-com.svg"
                 className=" w-7 h-7 "
                 alt=""
               />
@@ -403,7 +403,7 @@ function App() {
           <li className=" border-2 rounded-md mb-7 pb-3 ">
             <div className=" flex justify-between pr-4 pl-4 pt-3">
               <img
-                src="../public/arrow-up-right-svgrepo-com.svg"
+                src="/arrow-up-right-svgrepo-com.svg"
                 className=" w-7 h-7 "
                 alt=""
               />
@@ -421,7 +421,7 @@ function App() {
           <li className=" border-2 rounded-md mb-7 pb-3 ">
             <div className=" flex justify-between pr-4 pl-4 pt-3">
               <img
-                src="../public/arrow-up-right-svgrepo-com.svg"
+                src="/arrow-up-right-svgrepo-com.svg"
                 className=" w-7 h-7 "
                 alt=""
               />

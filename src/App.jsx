@@ -234,123 +234,286 @@ function App() {
         <p className=" max-md:mt-8  text-3xl text-center font-Title font-bold">
           Explore Diverse Property Listings{" "}
         </p>
-
-        <ul className=" lg:grid grid-cols-3 gap-y-4 lg:ml-7 mt-7  ">
-          <li className=" border-2 max-md:mb-5  lg:mr-10   rounded-md p-4">
-            <img
-              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
-              className=" lg:w-80 lg:h-52   rounded-md"
-              alt=""
-            />
-            <p className="  flex justify-between text-sm pt-2 font-bold">
-              <span>Boston Retreat</span>
-              <span> $300.800</span>
-            </p>
-            <p className=" text-sm text-slate-500">
-              <p>seattle Boston</p>
-              <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
-                <li className="border-2   rounded-sm"> 4 Beds</li>
-                <li className=" border-2   rounded-sm"> 2 Baths </li>
-                <li className=" border-2  rounded-sm"> 23.4sqft</li>
-              </ul>
-            </p>
-          </li>
-          <li className=" border-2 lg:mr-10    max-md:mb-5     rounded-md p-4  ">
-            <img
-              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
-              className=" lg:w-80 lg:h-52   rounded-md"
-              alt=""
-            />
-            <p className="  flex justify-between text-sm pt-2 font-bold">
-              <span>Boston Retreat</span>
-              <span> $300.800</span>
-            </p>
-            <p className=" text-sm text-slate-500">
-              <p>seattle Boston</p>
-              <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
-                <li className="border-2   rounded-sm"> 4 Beds</li>
-                <li className=" border-2   rounded-sm"> 2 Baths </li>
-                <li className=" border-2  rounded-sm"> 23.4sqft</li>
-              </ul>
-            </p>
-          </li>
-          <li className=" border-2 lg:mr-10   rounded-lg    p-4 ">
-            <img
-              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
-              className=" lg:w-80 lg:h-52    rounded-md "
-              alt=""
-            />
-            <p className="  flex justify-between text-sm pt-2 font-bold">
-              <span>Boston Retreat</span>
-              <span> $300.800</span>
-            </p>
-            <p className=" text-sm text-slate-500">
-              <p>seattle Boston</p>
-              <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
-                <li className="border-2   rounded-sm"> 4 Beds</li>
-                <li className=" border-2   rounded-sm"> 2 Baths </li>
-                <li className=" border-2  rounded-sm"> 23.4sqft</li>
-              </ul>
-            </p>
-          </li>
-          <li className=" border-2  rounded-lg lg:mr-10     p-4 ">
-            <img
-              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
-              className=" lg:w-80 lg:h-52   rounded-md "
-              alt=""
-            />
-            <p className="  flex justify-between text-sm pt-2 font-bold">
-              <span>Boston Retreat</span>
-              <span> $300.800</span>
-            </p>
-            <p className=" text-sm text-slate-500">
-              <p>seattle Boston</p>
-              <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
-                <li className="border-2   rounded-sm"> 4 Beds</li>
-                <li className=" border-2   rounded-sm"> 2 Baths </li>
-                <li className=" border-2  rounded-sm"> 23.4sqft</li>
-              </ul>
-            </p>
-          </li>
-          <li className=" border-2  rounded-lg lg:mr-10    p-4 ">
-            <img
-              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
-              className=" lg:w-80 lg:h-52    rounded-md "
-              alt=""
-            />
-            <p className="  flex justify-between text-sm pt-2 font-bold">
-              <span>Boston Retreat</span>
-              <span> $300.800</span>
-            </p>
-            <p className=" text-sm text-slate-500">
-              <p>seattle Boston</p>
-              <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
-                <li className="border-2   rounded-sm"> 4 Beds</li>
-                <li className=" border-2   rounded-sm"> 2 Baths </li>
-                <li className=" border-2  rounded-sm"> 23.4sqft</li>
-              </ul>
-            </p>
-          </li>
-          <li className=" border-2  rounded-lg lg:mr-10     p-4 ">
-            <img
-              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
-              className=" lg:w-80 lg:h-52    rounded-md "
-              alt=""
-            />
-            <p className="  flex justify-between text-sm pt-2 font-bold">
-              <span>Boston Retreat</span>
-              <span> $300.800</span>
-            </p>
-            <p className=" text-sm text-slate-500">
-              <p>seattle Boston</p>
-              <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
-                <li className="border-2   rounded-sm"> 4 Beds</li>
-                <li className=" border-2   rounded-sm"> 2 Baths </li>
-                <li className=" border-2  rounded-sm"> 23.4sqft</li>
-              </ul>
-            </p>
-          </li>
-        </ul>
+        <div className=" max-md:mr-4 ">
+          <ul className=" lg:grid grid-cols-3  gap-y-4 lg:ml-7 mt-7  ">
+            <li className=" border-2 max-md:mb-5  lg:mr-10   rounded-md p-4">
+              <img
+                src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+                className=" lg:w-80 lg:h-52   rounded-md"
+                alt=""
+              />
+              <p className="  flex justify-between text-sm pt-2 font-bold">
+                <span>Classic Damara</span>
+                <span> $300.800</span>
+              </p>
+              <p className=" text-sm text-slate-500">
+                <p>seattle Boston</p>
+                <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
+                  <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/bed-double-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>4 Beds</div>
+                  </li>
+                  <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/bathroom-2-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>2 Baths</div>
+                  </li>
+                  <li className="border-2   rounded-md flex justify-center   pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/measure-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>2.824sqft</div>
+                  </li>
+                </ul>
+              </p>
+            </li>
+            <li className=" border-2 lg:mr-10    max-md:mb-5     rounded-md p-4  ">
+              <img
+                src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+                className=" lg:w-80 lg:h-52   rounded-md"
+                alt=""
+              />
+              <p className="  flex justify-between text-sm pt-2 font-bold">
+                <span>Manstret Haven</span>
+                <span> $300.800</span>
+              </p>
+              <p className=" text-sm text-slate-500">
+                <p>seattle Boston</p>
+                <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
+                  <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/bed-double-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>4 Beds</div>
+                  </li>{" "}
+                  <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/bathroom-2-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>2 Baths</div>
+                  </li>{" "}
+                  <li className="border-2   rounded-md flex justify-center   pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/measure-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div> 2.820sqft</div>
+                  </li>{" "}
+                </ul>
+              </p>
+            </li>
+            <li className=" border-2 lg:mr-10   rounded-lg    p-4 ">
+              <img
+                src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+                className=" lg:w-80 lg:h-52    rounded-md "
+                alt=""
+              />
+              <p className="  flex justify-between text-sm pt-2 font-bold">
+                <span>Boston Retreat</span>
+                <span> $300.800</span>
+              </p>
+              <p className=" text-sm text-slate-500">
+                <p>seattle Boston</p>
+                <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
+                  <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/bed-double-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>4 Beds</div>
+                  </li>
+                  <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/bathroom-2-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>2 Baths</div>
+                  </li>
+                  <li className="border-2   rounded-md flex justify-center   pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/measure-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>2.640sqft</div>
+                  </li>{" "}
+                </ul>
+              </p>
+            </li>
+            <li className=" border-2  rounded-lg lg:mr-10     p-4 ">
+              <img
+                src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+                className=" lg:w-80 lg:h-52   rounded-md "
+                alt=""
+              />
+              <p className="  flex justify-between text-sm pt-2 font-bold">
+                <span>Phenix Otica</span>
+                <span> $300.800</span>
+              </p>
+              <p className=" text-sm text-slate-500">
+                <p>seattle Boston</p>
+                <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
+                  <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/bed-double-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>4 Beds</div>
+                  </li>
+                  <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/bathroom-2-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>2 Baths</div>
+                  </li>
+                  <li className="border-2   rounded-md flex justify-center  pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/measure-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>2.698sqft</div>
+                  </li>{" "}
+                </ul>
+              </p>
+            </li>
+            <li className=" border-2  rounded-lg lg:mr-10    p-4 ">
+              <img
+                src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+                className=" lg:w-80 lg:h-52    rounded-md "
+                alt=""
+              />
+              <p className="  flex justify-between text-sm pt-2 font-bold">
+                <span>Welvore Henix</span>
+                <span> $300.800</span>
+              </p>
+              <p className=" text-sm text-slate-500">
+                <p>seattle Boston</p>
+                <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
+                  <li className="border-2   rounded-md flex justify-center   pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/bed-double-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>4 Beds</div>
+                  </li>
+                  <li className="border-2   rounded-md flex justify-center   pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/bathroom-2-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>2 Baths</div>
+                  </li>{" "}
+                  <li className="border-2   rounded-md flex justify-center   pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/measure-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>2.882sqft</div>
+                  </li>{" "}
+                </ul>
+              </p>
+            </li>
+            <li className=" border-2  rounded-lg lg:mr-10     p-4 ">
+              <img
+                src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+                className=" lg:w-80 lg:h-52    rounded-md "
+                alt=""
+              />
+              <p className="  flex justify-between text-sm pt-2 font-bold">
+                <span>Havasu Bave</span>
+                <span> $300.800</span>
+              </p>
+              <p className=" text-sm text-slate-500">
+                <p>seattle Boston</p>
+                <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
+                  <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/bed-double-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>4 Beds</div>
+                  </li>
+                  <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/bathroom-2-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>2 Baths</div>
+                  </li>
+                  <li className="border-2   rounded-md flex justify-center   pt-1 pb-1">
+                    <div>
+                      <img
+                        src="/measure-svgrepo-com.svg"
+                        className=" w-4 h-4 pt-1"
+                        alt=""
+                      />
+                    </div>
+                    <div>2.466sqft</div>
+                  </li>{" "}
+                </ul>
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
       {/* {work with us } */}
       <div>
@@ -449,7 +612,7 @@ function App() {
         <p className=" font-body text-black/40 text-center text-sm">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         </p>
-        <div className=" lg:flex justify-center gap-5 lg:border-2 lg:rounded-md mb-4 ">
+        <div className=" lg:flex justify-center gap-5 lg:border-2 lg:rounded-md mb-4 lg:pt-4 mt-5 lg:ml-32 lg:mr-32 ">
           <div className=" max-md:hidden ">
             <img
               src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
@@ -459,57 +622,60 @@ function App() {
           </div>
           <div className=" ">
             <div className=" lg:grid grid-cols-2 gap-x-7">
-              <div className=" lg:grid ">
+              <div className=" grid ">
                 {" "}
-                <label> Full Name </label>
+                <label className="  mb-2 "> Full Name </label>
                 <input
                   placeholder="Enter fullname"
-                  className=" outline lg:pr-16 rounded-sm lg:pl-1 lg:pt-1 lg:pb-1"
+                  className=" border-2  lg:pr-16 rounded-md lg:pl-1 lg:pt-1 lg:pb-1"
                   type=" text"
                 ></input>
               </div>
-              <div className=" lg:grid">
+              <div className=" grid max-md:mt-3">
                 {" "}
-                <label> Email Address</label>
+                <label className="  mb-2 "> Email Address</label>
                 <input
-                  className=" outline lg:pr-16 rounded-sm lg:pl-1 lg:pt-1 lg:pb-1"
+                  className=" border-2  lg:pr-16 rounded-md lg:pl-1 lg:pt-1 lg:pb-1"
                   placeholder="Enter Email Address"
                   type=" text"
                 ></input>
               </div>
-              <div className=" lg:grid">
+              <div className=" grid mt-3">
                 {" "}
-                <label> Phone Number </label>
+                <label className="  mb-2 "> Phone Number </label>
                 <input
-                  className=" outline lg:pr-16 rounded-sm lg:pl-1 lg:pt-1 lg:pb-1"
+                  className=" border-2  lg:pr-16 rounded-md lg:pl-1 lg:pt-1 lg:pb-1"
                   placeholder="Enter phone number"
                   type=" text"
                 ></input>
               </div>
-              <div className=" lg:grid">
+              <div className=" grid mt-3">
                 {" "}
-                <label> Property Type </label>
+                <label className="  mb-2 "> Property Type </label>
                 <input
-                  className=" outline lg:pr-16 rounded-sm lg:pl-1 lg:pt-1 lg:pb-1"
+                  className=" border-2  lg:pr-16 rounded-md lg:pl-1 lg:pt-1 lg:pb-1"
                   placeholder="select type"
                   type="select"
                 ></input>
               </div>
 
-              <div className=" lg:grid">
+              <div className=" grid mt-3">
                 {" "}
-                <label> Budget Range </label>
+                <label className="  mb-2 "> Budget Range </label>
                 <input
-                  className=" outline lg:pr-16 rounded-sm lg:pl-1 lg:pt-1 lg:pb-1"
+                  className=" border-2 lg:pr-16 rounded-md lg:pl-1 lg:pt-1 lg:pb-1"
                   placeholder="select budget range"
                   type="select"
                 ></input>
               </div>
-              <div className=" lg:grid">
+              <div className=" grid mt-3">
                 {" "}
-                <label> Location Preference </label>
+                <label className="  mb-2 font-Title">
+                  {" "}
+                  Location Preference{" "}
+                </label>
                 <input
-                  className=" outline lg:pr-16 rounded-sm lg:pl-1 lg:pt-1 lg:pb-1"
+                  className=" border-2 lg:pr-16 rounded-md lg:pl-1 lg:pt-1 lg:pb-1"
                   placeholder="select location"
                   type="select"
                 ></input>
@@ -517,14 +683,22 @@ function App() {
             </div>
             <ul className=" mt-7">
               <li>
-                <div>
+                <div className=" grid">
                   {" "}
-                  <label> Message </label>
-                  <input placeholder="write message" type="text"></input>
+                  <label className="  mb-2 "> Message </label>
+                  <input
+                    placeholder="write message"
+                    className=" pt-2 pl-2 pb-6 rounded-md border-2"
+                    type="text"
+                  ></input>
                 </div>
               </li>
-              <li>
-                <button placeholder="" type="submit">
+              <li className=" ">
+                <button
+                  className=" border-2 mt-5  max-md:pr-32  max-md:pl-32    lg:pl-60 bg-black text-white border-black rounded-sm mb-4 lg:pr-60  "
+                  placeholder=""
+                  type="submit"
+                >
                   Submit
                 </button>
               </li>

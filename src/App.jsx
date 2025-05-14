@@ -693,9 +693,9 @@ function App() {
                   ></input>
                 </div>
               </li>
-              <li className=" ">
+              <li className=" max-md:mr-4 ">
                 <button
-                  className=" border-2 mt-5  max-md:pr-32  max-md:pl-32    lg:pl-60 bg-black text-white border-black rounded-sm mb-4 lg:pr-60  "
+                  className=" border-2 mt-5  max-md:pr-36  max-md:pl-40   lg:pl-60 bg-black text-white border-black rounded-sm mb-4 lg:pr-60  "
                   placeholder=""
                   type="submit"
                 >

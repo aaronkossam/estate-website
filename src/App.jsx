@@ -102,7 +102,13 @@ function App() {
         </div>
       </div>
       <div>
-        <p className=" max-md:border-2 text-center  mt-6 font-body text-black/40  max-md:mr-20 max-md:ml-20 pt-2 pb-2">
+        <p className=" lg:hidden font-body text-black/40   max-md:border-2  text-center  mt-6  max-md:mr-20 max-md:ml-20 pt-2 pb-2 ">
+          About Rubble{" "}
+        </p>
+        <p
+          style={{ marginLeft: "34rem", marginRight: "34rem" }}
+          className=" border-2 max-md:hidden font-body text-black/40  text-sm    text-center  mt-14 "
+        >
           About Rubble
         </p>
         <p className="  lg:text-center lg:text-4xl  font-Title max-md:text-center max-md:mt-5 max-md:text-xm font-bold">
@@ -178,7 +184,13 @@ function App() {
       </div>
       {/* {services} */}
       <div className=" mb-6">
-        <p className=" font-body text-black/40 max-md:border-2 text-center  mt-6  max-md:mr-20 max-md:ml-20 pt-2 pb-2 ">
+        <p className=" lg:hidden font-body text-black/40   max-md:border-2  text-center  mt-6  max-md:mr-20 max-md:ml-20 pt-2 pb-2 ">
+          Service We Provide
+        </p>
+        <p
+          style={{ marginLeft: "34rem", marginRight: "34rem" }}
+          className=" mt-8  border-2 max-md:hidden font-body text-black/40  text-sm    text-center  mt-6 "
+        >
           Service We Provide
         </p>
         <p className=" max-md:mt-2 text-3xl text-center font-Title font-bold">
@@ -228,8 +240,14 @@ function App() {
       </div>
       {/* {poperty gallery} */}
       <div className=" mb-5 ml-5">
-        <p className=" font-body text-black/40 max-md:border-2 text-center  mt-6  max-md:mr-20 max-md:ml-20 pt-2 pb-2 ">
-          Popular property{" "}
+        <p className=" lg:hidden font-body text-black/40   max-md:border-2  text-center  mt-6  max-md:mr-20 max-md:ml-20 pt-2 pb-2 ">
+          Popular Property{" "}
+        </p>
+        <p
+          style={{ marginLeft: "34rem", marginRight: "34rem" }}
+          className=" mt-8  border-2 max-md:hidden font-body text-black/40  text-sm    text-center  mt-6 "
+        >
+          popular property
         </p>
         <p className=" max-md:mt-8  text-3xl text-center font-Title font-bold">
           Explore Diverse Property Listings{" "}
@@ -244,10 +262,10 @@ function App() {
               />
               <p className="  flex justify-between text-sm pt-2 font-bold">
                 <span>Classic Damara</span>
-                <span> $300.800</span>
+                <span> $480.500</span>
               </p>
               <p className=" text-sm text-slate-500">
-                <p>seattle Boston</p>
+                <p>Seattle,United States</p>
                 <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
                   <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
                     <div>
@@ -290,10 +308,10 @@ function App() {
               />
               <p className="  flex justify-between text-sm pt-2 font-bold">
                 <span>Manstret Haven</span>
-                <span> $300.800</span>
+                <span> $425.000</span>
               </p>
               <p className=" text-sm text-slate-500">
-                <p>seattle Boston</p>
+                <p>New York,United States</p>
                 <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
                   <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
                     <div>
@@ -336,10 +354,10 @@ function App() {
               />
               <p className="  flex justify-between text-sm pt-2 font-bold">
                 <span>Boston Retreat</span>
-                <span> $300.800</span>
+                <span> $350.800</span>
               </p>
               <p className=" text-sm text-slate-500">
-                <p>seattle Boston</p>
+                <p>Nashville,United States</p>
                 <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
                   <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
                     <div>
@@ -382,10 +400,10 @@ function App() {
               />
               <p className="  flex justify-between text-sm pt-2 font-bold">
                 <span>Phenix Otica</span>
-                <span> $300.800</span>
+                <span> $428.100</span>
               </p>
               <p className=" text-sm text-slate-500">
-                <p>seattle Boston</p>
+                <p>Las Vegas,United States</p>
                 <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
                   <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
                     <div>
@@ -428,12 +446,12 @@ function App() {
               />
               <p className="  flex justify-between text-sm pt-2 font-bold">
                 <span>Welvore Henix</span>
-                <span> $300.800</span>
+                <span> $480.500</span>
               </p>
               <p className=" text-sm text-slate-500">
-                <p>seattle Boston</p>
+                <p>Denver,United States</p>
                 <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
-                  <li className="border-2   rounded-md flex justify-center   pt-1 pb-1">
+                  <li className="border-2   rounded-md flex justify-center gap-1   pt-1 pb-1">
                     <div>
                       <img
                         src="/bed-double-svgrepo-com.svg"
@@ -474,10 +492,10 @@ function App() {
               />
               <p className="  flex justify-between text-sm pt-2 font-bold">
                 <span>Havasu Bave</span>
-                <span> $300.800</span>
+                <span> $398.600</span>
               </p>
               <p className=" text-sm text-slate-500">
-                <p>seattle Boston</p>
+                <p>Charlotte,United States</p>
                 <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
                   <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
                     <div>
@@ -517,8 +535,14 @@ function App() {
       </div>
       {/* {work with us } */}
       <div>
-        <p className=" font-body text-black/40 max-md:border-2 text-center  mt-6  max-md:mr-20 max-md:ml-20 pt-2 pb-2 ">
-          How it works
+        <p className=" lg:hidden font-body text-black/40   max-md:border-2  text-center  mt-6  max-md:mr-20 max-md:ml-20 pt-2 pb-2 ">
+          How It Works{" "}
+        </p>
+        <p
+          style={{ marginLeft: "34rem", marginRight: "34rem" }}
+          className=" mt-14  border-2 max-md:hidden font-body text-black/40  text-sm    text-center   "
+        >
+          How It Works{" "}
         </p>
         <p className=" max-md:mt-2 text-3xl text-center font-Title font-bold">
           Journey to Achieve Property Success{" "}
@@ -534,7 +558,7 @@ function App() {
                 className=" w-7 h-7 "
                 alt=""
               />
-              <p>01</p>
+              <p className=" font-semibold">01</p>
             </div>
             <p className=" pt-9 text-xl font-Title font-bold pl-4">
               {" "}
@@ -552,7 +576,7 @@ function App() {
                 className=" w-7 h-7 "
                 alt=""
               />
-              <p>02</p>
+              <p className=" font-semibold">02</p>
             </div>
             <p className=" pt-9 text-xl font-Title font-bold pl-4">
               {" "}
@@ -570,7 +594,7 @@ function App() {
                 className=" w-7 h-7 "
                 alt=""
               />
-              <p>03</p>
+              <p className=" font-semibold">03</p>
             </div>
             <p className=" pt-9 text-xl font-Title font-bold pl-4">
               {" "}
@@ -588,7 +612,7 @@ function App() {
                 className=" w-7 h-7 "
                 alt=""
               />
-              <p>04</p>
+              <p className=" font-semibold">04</p>
             </div>
             <p className=" pt-9 text-xl font-Title font-bold pl-4">
               {" "}
@@ -603,7 +627,13 @@ function App() {
       </div>
       {/* {contact us } */}
       <div>
-        <p className=" font-body text-black/40 max-md:border-2 text-center  mt-6  max-md:mr-20 max-md:ml-20 pt-2 pb-2 ">
+        <p className=" lg:hidden font-body text-black/40   max-md:border-2  text-center  mt-6  max-md:mr-20 max-md:ml-20 pt-2 pb-2 ">
+          Contact Us{" "}
+        </p>
+        <p
+          style={{ marginLeft: "34rem", marginRight: "34rem" }}
+          className=" mt-8  border-2 max-md:hidden font-body text-black/40  text-sm    text-center  mt-6 "
+        >
           Contact Us{" "}
         </p>
         <p className=" max-md:mt-2 text-3xl text-center font-Title font-bold">
@@ -612,7 +642,7 @@ function App() {
         <p className=" font-body text-black/40 text-center text-sm">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         </p>
-        <div className=" lg:flex justify-center gap-5 lg:border-2 lg:rounded-md mb-4 lg:pt-4 mt-5 lg:ml-32 lg:mr-32 ">
+        <div className="  lg:flex justify-center gap-5 lg:border-2  lg:rounded-md mb-4 lg:pt-4 mt-5 lg:ml-32 lg:mr-32 ">
           <div className=" max-md:hidden ">
             <img
               src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
@@ -705,6 +735,62 @@ function App() {
             </ul>
           </div>
         </div>
+      </div>
+      {/* {contact us} */}
+      <div className=" max-md:mt-4 lg:grid grid-cols-2 lg:mt-16">
+        <div>
+          <p className=" pl-2 pt-2 font-Title font-bold text-2xl">Rubble</p>
+          <p className="  max-md:ml-2 lg:text-sm lg:ml-2 lg:hidden ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            exercitationem earum quia perspiciatis inventore nobis cumque rem
+          </p>
+          <p className="  max-md:hidden  text-sm ml-2 ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            <p>
+              exercitationem earum quia perspiciatis inventore nobis cumque rem
+            </p>
+          </p>
+        </div>
+        <div className=" lg:mb-11 max-md:ml-2 max-md:mt-6 lg:flex gap-10 ">
+          <ul className=" max-md:mb-6 font-thin">
+            <li className=" font-bold">Company</li>
+            <li>Blog</li>
+            <li>Career</li>
+            <li>Contact</li>
+            <li>About us</li>
+          </ul>
+          <ul className=" max-md:mb-6  font-thin">
+            <li className=" font-bold">Social Media</li>
+            <li>Twitter</li>
+            <li>Linkedin</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+          </ul>{" "}
+          <ul className=" max-md:mb-6 font-thin">
+            <li className=" font-bold">Service</li>
+            <li>Buy Property</li>
+            <li>Sell property </li>
+            <li>Rent property</li>
+            <li>Property Agent</li>
+          </ul>
+          <ul className=" max-md:mb-6 font-thin">
+            <li className=" font-bold">Contact </li>
+            <li>Chat Our Support</li>
+            <li>rubble@gmail.com</li>
+            <li>+1 814 637 1529</li>
+            <li>About us</li>
+          </ul>
+        </div>
+      </div>
+      <hr></hr>
+      <div className=" max-md:flex justify-between mb-4 lg:hidden">
+        <p style={{ fontSize: "0.5rem" }}>Rubble2024.All Rights Reserved</p>
+        <p style={{ fontSize: "0.5rem" }}> privacy Policy & Terms of Use</p>
+      </div>
+
+      <div className=" lg:flex justify-between mb-4 max-md:hidden">
+        <p style={{ fontSize: "0.5rem" }}>Rubble2024.All Rights Reserved</p>
+        <p style={{ fontSize: "0.5rem" }}> privacy Policy & Terms of Use</p>
       </div>
     </div>
   );

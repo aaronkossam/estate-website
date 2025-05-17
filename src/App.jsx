@@ -680,23 +680,30 @@ function App() {
                 ></input>
               </div>
               <div className=" grid mt-3">
-                {" "}
-                <label className="  mb-2 "> Property Type </label>
-                <input
-                  className=" border-2  lg:pr-16 rounded-md lg:pl-1 lg:pt-1 lg:pb-1"
-                  placeholder="select type"
-                  type="select"
-                ></input>
+                <p className="  mb-2 ">Property Type </p>
+                <select className="  mb-2 border-2 rounded-md  text-sm text-slate-400 lg:pt-1 lg:pb-2  ">
+                  {" "}
+                  <option
+                    className=" border-2  lg:pr-16 rounded-md lg:pl-1 lg:pt-1 lg:pb-1 "
+                    type="select"
+                  >
+                    select Type{" "}
+                  </option>
+                </select>
               </div>
 
               <div className=" grid mt-3">
                 {" "}
-                <label className="  mb-2 "> Budget Range </label>
-                <input
-                  className=" border-2 lg:pr-16 rounded-md lg:pl-1 lg:pt-1 lg:pb-1"
-                  placeholder="select budget range"
-                  type="select"
-                ></input>
+                <p className="  mb-2 "> Budget Range </p>
+                <select className="  mb-2 border-2 rounded-md  text-sm text-slate-400 lg:pt-1 lg:pb-2  ">
+                  {" "}
+                  <option
+                    className=" border-2  lg:pr-16 rounded-md lg:pl-1 lg:pt-1 lg:pb-1 "
+                    type="select"
+                  >
+                    select Budget Range{" "}
+                  </option>
+                </select>
               </div>
               <div className=" grid mt-3">
                 {" "}
@@ -704,11 +711,15 @@ function App() {
                   {" "}
                   Location Preference{" "}
                 </label>
-                <input
-                  className=" border-2 lg:pr-16 rounded-md lg:pl-1 lg:pt-1 lg:pb-1"
-                  placeholder="select location"
-                  type="select"
-                ></input>
+                <select className="  mb-2 border-2 rounded-md  text-sm text-slate-400 lg:pt-1 lg:pb-2  ">
+                  {" "}
+                  <option
+                    className=" border-2  lg:pr-16 rounded-md lg:pl-1 lg:pt-1 lg:pb-1 "
+                    type="select"
+                  >
+                    select Location{" "}
+                  </option>
+                </select>
               </div>
             </div>
             <ul className=" mt-7">

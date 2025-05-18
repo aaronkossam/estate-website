@@ -596,7 +596,7 @@ function App() {
           <li className=" border-2 rounded-md  mb-7 pb-3 ">
             <div className=" flex justify-between pr-4 pl-4 pt-3">
               <img
-                src="/public/apartment-svgrepo-com.svg"
+                src="/apartment-svgrepo-com.svg"
                 className=" w-7 h-7 "
                 alt=""
               />
@@ -614,7 +614,7 @@ function App() {
           <li className=" border-2 rounded-md mb-7 pb-3 ">
             <div className=" flex justify-between pr-4 pl-4 pt-3">
               <img
-                src="/public/calender-svgrepo-com.svg"
+                src="/calender-svgrepo-com.svg"
                 className=" w-7 h-7 "
                 alt=""
               />
@@ -631,11 +631,7 @@ function App() {
           </li>
           <li className=" border-2 rounded-md mb-7 pb-3 ">
             <div className=" flex justify-between pr-4 pl-4 pt-3">
-              <img
-                src="/public/secure-svgrepo-com.svg"
-                className=" w-7 h-7 "
-                alt=""
-              />
+              <img src="/secure-svgrepo-com.svg" className=" w-7 h-7 " alt="" />
               <p className=" font-semibold">03</p>
             </div>
             <p className=" pt-9 text-xl font-Title font-bold pl-4">
@@ -649,11 +645,7 @@ function App() {
           </li>
           <li className=" border-2 rounded-md mb-7 pb-3 ">
             <div className=" flex justify-between pr-4 pl-4 pt-3">
-              <img
-                src="/public/offer-svgrepo-com.svg"
-                className=" w-7 h-7 "
-                alt=""
-              />
+              <img src="/offer-svgrepo-com.svg" className=" w-7 h-7 " alt="" />
               <p className=" font-semibold">04</p>
             </div>
             <p className=" pt-9 text-xl font-Title font-bold pl-4">

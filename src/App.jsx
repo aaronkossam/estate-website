@@ -265,7 +265,14 @@ function App() {
                 <span> $480.500</span>
               </p>
               <p className=" text-sm text-slate-500">
-                <p>Seattle,United States</p>
+                <p className=" flex">
+                  <img
+                    src="/location-pin-svgrepo-com.svg"
+                    alt=""
+                    className=" w-3 h-3 mt-1"
+                  />
+                  <p> Seattle,United States</p>
+                </p>
                 <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
                   <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
                     <div>
@@ -311,7 +318,14 @@ function App() {
                 <span> $425.000</span>
               </p>
               <p className=" text-sm text-slate-500">
-                <p>New York,United States</p>
+                <p className=" flex">
+                  <img
+                    src="/location-pin-svgrepo-com.svg"
+                    alt=""
+                    className=" w-3 h-3 mt-1"
+                  />
+                  <p> New York,United States</p>
+                </p>
                 <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
                   <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
                     <div>
@@ -357,7 +371,14 @@ function App() {
                 <span> $350.800</span>
               </p>
               <p className=" text-sm text-slate-500">
-                <p>Nashville,United States</p>
+                <p className=" flex">
+                  <img
+                    src="/location-pin-svgrepo-com.svg"
+                    alt=""
+                    className=" w-3 h-3 mt-1"
+                  />
+                  <p> Narshville,United States</p>
+                </p>
                 <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
                   <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
                     <div>
@@ -403,7 +424,14 @@ function App() {
                 <span> $428.100</span>
               </p>
               <p className=" text-sm text-slate-500">
-                <p>Las Vegas,United States</p>
+                <p className=" flex">
+                  <img
+                    src="/location-pin-svgrepo-com.svg"
+                    alt=""
+                    className=" w-3 h-3 mt-1"
+                  />
+                  <p> Las Vegas,United States</p>
+                </p>
                 <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
                   <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
                     <div>
@@ -449,7 +477,14 @@ function App() {
                 <span> $480.500</span>
               </p>
               <p className=" text-sm text-slate-500">
-                <p>Denver,United States</p>
+                <p className=" flex">
+                  <img
+                    src="/location-pin-svgrepo-com.svg"
+                    alt=""
+                    className=" w-3 h-3 mt-1"
+                  />
+                  <p> Denver,United States</p>
+                </p>
                 <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
                   <li className="border-2   rounded-md flex justify-center gap-1   pt-1 pb-1">
                     <div>
@@ -495,7 +530,14 @@ function App() {
                 <span> $398.600</span>
               </p>
               <p className=" text-sm text-slate-500">
-                <p>Charlotte,United States</p>
+                <p className=" flex">
+                  <img
+                    src="/location-pin-svgrepo-com.svg"
+                    alt=""
+                    className=" w-3 h-3 mt-1"
+                  />
+                  <p> Charlotte,United States</p>
+                </p>
                 <ul className=" grid gap-2 grid-cols-3 text-sm text-center pt-2 text-slate-500">
                   <li className="border-2   rounded-md flex justify-center gap-2  pt-1 pb-1">
                     <div>
@@ -554,7 +596,7 @@ function App() {
           <li className=" border-2 rounded-md  mb-7 pb-3 ">
             <div className=" flex justify-between pr-4 pl-4 pt-3">
               <img
-                src="/arrow-up-right-svgrepo-com.svg"
+                src="/public/apartment-svgrepo-com.svg"
                 className=" w-7 h-7 "
                 alt=""
               />
@@ -572,7 +614,7 @@ function App() {
           <li className=" border-2 rounded-md mb-7 pb-3 ">
             <div className=" flex justify-between pr-4 pl-4 pt-3">
               <img
-                src="/arrow-up-right-svgrepo-com.svg"
+                src="/public/calender-svgrepo-com.svg"
                 className=" w-7 h-7 "
                 alt=""
               />
@@ -590,7 +632,7 @@ function App() {
           <li className=" border-2 rounded-md mb-7 pb-3 ">
             <div className=" flex justify-between pr-4 pl-4 pt-3">
               <img
-                src="/arrow-up-right-svgrepo-com.svg"
+                src="/public/secure-svgrepo-com.svg"
                 className=" w-7 h-7 "
                 alt=""
               />
@@ -608,7 +650,7 @@ function App() {
           <li className=" border-2 rounded-md mb-7 pb-3 ">
             <div className=" flex justify-between pr-4 pl-4 pt-3">
               <img
-                src="/arrow-up-right-svgrepo-com.svg"
+                src="/public/offer-svgrepo-com.svg"
                 className=" w-7 h-7 "
                 alt=""
               />

@@ -128,7 +128,7 @@ function App() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem
             </p>
             <img
-              src={backhero}
+              src="/Green-Park.jpg"
               alt=""
               className=" rounded-md  mt-4"
               style={{ width: "500px", height: "250px", marginBottom: "2rem" }}
@@ -202,7 +202,7 @@ function App() {
         <ul className=" lg:flex justify-center gap-5 mt-7  ">
           <li className=" border-2 max-md:mb-5    rounded-md p-4">
             <img
-              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+              src="/yaa-naa-ghana-house-plans-naayaa-front.png"
               className=" lg:w-52 lg:h-44  rounded-md"
               alt=""
             />
@@ -214,7 +214,7 @@ function App() {
           </li>
           <li className=" border-2   max-md:mb-5     rounded-md p-4  ">
             <img
-              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+              src="/houses-1__FillWzEyMDAsODAwXQ.jpg"
               className=" lg:w-52 lg:h-44   rounded-md"
               alt=""
             />
@@ -226,7 +226,7 @@ function App() {
           </li>
           <li className=" border-2  rounded-lg    p-4 ">
             <img
-              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+              src="/luxury-homes-in-Ghana.jpg"
               className=" lg:w-52 lg:h-44    rounded-md "
               alt=""
             />
@@ -256,7 +256,7 @@ function App() {
           <ul className=" lg:grid grid-cols-3  gap-y-4 lg:ml-7 mt-7  ">
             <li className=" border-2 max-md:mb-5  lg:mr-10   rounded-md p-4">
               <img
-                src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+                src="/20240527_144329-1170x785.jpg"
                 className=" lg:w-80 lg:h-52   rounded-md"
                 alt=""
               />
@@ -309,7 +309,7 @@ function App() {
             </li>
             <li className=" border-2 lg:mr-10    max-md:mb-5     rounded-md p-4  ">
               <img
-                src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+                src="/36cf643026a85ccd9fb8d137fe6903e2.jpg"
                 className=" lg:w-80 lg:h-52   rounded-md"
                 alt=""
               />
@@ -415,7 +415,7 @@ function App() {
             </li>
             <li className=" border-2  rounded-lg lg:mr-10     p-4 ">
               <img
-                src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+                src="/737793_h_133.jpg"
                 className=" lg:w-80 lg:h-52   rounded-md "
                 alt=""
               />
@@ -468,7 +468,7 @@ function App() {
             </li>
             <li className=" border-2  rounded-lg lg:mr-10    p-4 ">
               <img
-                src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+                src="/public/Green-Park.jpg"
                 className=" lg:w-80 lg:h-52    rounded-md "
                 alt=""
               />
@@ -521,7 +521,7 @@ function App() {
             </li>
             <li className=" border-2  rounded-lg lg:mr-10     p-4 ">
               <img
-                src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+                src="/houses_and_land-5bfc3326c9e77c0051812eb3.jpg"
                 className=" lg:w-80 lg:h-52    rounded-md "
                 alt=""
               />
@@ -679,7 +679,7 @@ function App() {
         <div className="  lg:flex justify-center gap-5 lg:border-2  lg:rounded-md mb-4 lg:pt-4 mt-5 lg:ml-32 lg:mr-32 ">
           <div className=" max-md:hidden ">
             <img
-              src="/625b10a58137b364b18df2ea_iStock-94179607.jpg"
+              src="/contact-center-857x1000.jpg"
               className=" w-80 h-96 rounded-md"
               alt=""
             />

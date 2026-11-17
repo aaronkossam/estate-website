@@ -10,8 +10,8 @@ export const brand = {
 export const contact = {
   email: "makonadu1997@gmail.com",
   phone: "",
-  // International WhatsApp digits, without + or spaces; awaiting number confirmation.
-  whatsapp: "",
+  // Ghana country code + supplied local number, with the leading trunk zero removed.
+  whatsapp: "2335041794250",
 };
 
 export const navLinks = [

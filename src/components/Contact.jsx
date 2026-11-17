@@ -18,9 +18,9 @@ export default function Contact() {
 
   return (
     <section id="contact" className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
-      <SectionHeading eyebrow="Contact us" title="Tell us what you are looking for" text="An agent will get back to you within one working day." />
+      <SectionHeading eyebrow="Contact us" title="Tell us what you are looking for" text="Share a few details and we will get back to you." />
       <div className="grid overflow-hidden rounded-2xl border border-neutral-200 lg:grid-cols-5">
-        <img src="/contact-center-857x1000.jpg" alt="Rubble support agent" className="hidden h-full w-full object-cover lg:col-span-2 lg:block" loading="lazy" />
+        <img src="/contact-center-857x1000.jpg" alt="Customer support representative wearing a headset" className="hidden h-full w-full object-cover lg:col-span-2 lg:block" loading="lazy" />
         <form onSubmit={onSubmit} className="grid gap-5 p-6 sm:grid-cols-2 md:p-10 lg:col-span-3">
           <Field label="Full name" id="name">
             <input id="name" name="name" type="text" autoComplete="name" placeholder="Kwame Mensah" className={field} required />
@@ -31,33 +31,20 @@ export default function Contact() {
           <Field label="Phone number" id="phone">
             <input id="phone" name="phone" type="tel" autoComplete="tel" placeholder="+233 24 000 0000" className={field} />
           </Field>
-          <Field label="Property type" id="type">
-            <select id="type" name="type" className={field} defaultValue="">
-              <option value="" disabled>Select type</option>
-              <option>House</option>
-              <option>Apartment</option>
-              <option>Land</option>
-              <option>Commercial</option>
+          <Field label="Service" id="service">
+            <select id="service" name="service" className={field} defaultValue="">
+              <option value="" disabled>Select a service</option>
+              <option>Land purchase</option>
+              <option>Building materials</option>
+              <option>Construction &amp; estate services</option>
+              <option>Hair &amp; beauty salon</option>
             </select>
           </Field>
-          <Field label="Budget range" id="budget">
-            <select id="budget" name="budget" className={field} defaultValue="">
-              <option value="" disabled>Select budget</option>
-              <option>Under $100k</option>
-              <option>$100k – $300k</option>
-              <option>$300k – $500k</option>
-              <option>$500k+</option>
-            </select>
-          </Field>
-          <Field label="Preferred location" id="location">
-            <select id="location" name="location" className={field} defaultValue="">
-              <option value="" disabled>Select location</option>
-              <option>Accra</option>
-              <option>Tema</option>
-              <option>Kumasi</option>
-              <option>Takoradi</option>
-            </select>
-          </Field>
+          <div className="sm:col-span-2">
+            <Field label="Site or preferred location" id="location">
+              <input id="location" name="location" type="text" placeholder="e.g. Accra, Kumasi" className={field} />
+            </Field>
+          </div>
           <div className="sm:col-span-2">
             <Field label="Message" id="message">
               <textarea id="message" name="message" rows={4} placeholder="Tell us a bit about what you need" className={field} />

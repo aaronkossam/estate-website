@@ -1,59 +1,101 @@
+export const brand = {
+  name: "Karon Estate",
+  full: "Karon Estate Enterprise",
+  tagline: "Enterprise • Ghana",
+  registration: "BN415671026",
+  registeredOn: "15 October 2026",
+};
+
+// Add the real contact details here. Empty values are hidden in the footer.
+export const contact = {
+  email: "",
+  phone: "",
+};
+
 export const navLinks = [
   { label: "Home", href: "#home" },
-  { label: "Properties", href: "#properties" },
   { label: "Services", href: "#services" },
-  { label: "How it works", href: "#process" },
+  { label: "About", href: "#about" },
+  { label: "Why Karon", href: "#why" },
   { label: "Contact", href: "#contact" },
 ];
 
-export const stats = [
-  { value: "800+", label: "Properties available" },
-  { value: "460+", label: "Happy clients" },
-  { value: "280+", label: "Partners" },
-  { value: "120+", label: "Awards" },
-];
-
-export const services = [
+export const pillars = [
   {
-    title: "Buy a property",
-    text: "Browse verified listings and get guided from first viewing to signed documents.",
-    image: "/yaa-naa-ghana-house-plans-naayaa-front.png",
-    alt: "Front view of a modern two-storey house",
+    title: "Real Estate & Land Sales",
+    subtitle: "Litigation-free, surveyed, registered",
+    text: "We offer registered, litigation-free plots with proper documentation — site plans, indentures, and registration assistance. Estate layouts with access roads and drainage considered.",
+    tags: ["Title Verification", "Site Inspection", "Indenture & Plan", "Registration Support"],
+    icon: "map",
+    badge: "Most requested",
   },
   {
-    title: "Sell a property",
-    text: "We price, market and negotiate so your home reaches serious buyers quickly.",
-    image: "/houses-1__FillWzEyMDAsODAwXQ.jpg",
-    alt: "Row of newly built houses",
+    title: "General Supply & Building Materials",
+    subtitle: "Cement, iron rods, blocks & hardware",
+    text: "Your one-stop construction supply chain. We source directly, store properly, and deliver across Ghana. No counterfeit, no short quantity — measured, invoiced, traceable.",
+    tags: ["Cement • OPC/PPC", "16mm / 12mm Iron Rods", "Blocks & Sand", "Plumbing & Electrical", "Tools & Safety", "Bulk Discounts"],
+    icon: "box",
   },
   {
-    title: "Rent a property",
-    text: "Apartments and family homes for short and long stays, vetted by our agents.",
-    image: "/luxury-homes-in-Ghana.jpg",
-    alt: "Luxury home with a landscaped front garden",
+    title: "Construction & Estate Services",
+    subtitle: "Led by a civil engineer • Assembly experience",
+    text: "Engineer-led building support from estimate to execution: structural supervision, site compliance and estate planning handled by a practicing civil engineer.",
+    tags: ["Structural Supervision", "Estimates & BOQs", "Site Compliance", "Estate Planning"],
+    icon: "building",
+  },
+  {
+    title: "Hair & Beauty Salon",
+    subtitle: "Modern braids, styling & care",
+    text: "Our beauty studio brings the same standard of cleanliness, professionalism, and customer care. Trained stylists, hygienic tools, modern styles — because beautifying lives is part of building dreams.",
+    tags: ["Braids & Cornrows", "Wig Installation", "Hair Treatment", "Bridal Styling", "Kids Friendly"],
+    icon: "scissors",
   },
 ];
 
-export const listings = [
-  { name: "Classic Damara", price: 480500, location: "East Legon, Accra", beds: 4, baths: 2, area: 2824, image: "/20240527_144329-1170x785.jpg" },
-  { name: "Manstret Haven", price: 425000, location: "Cantonments, Accra", beds: 4, baths: 2, area: 2820, image: "/36cf643026a85ccd9fb8d137fe6903e2.jpg" },
-  { name: "Boston Retreat", price: 350800, location: "Airport Residential, Accra", beds: 4, baths: 2, area: 2640, image: "/625b10a58137b364b18df2ea_iStock-94179607.jpg" },
-  { name: "Phenix Otica", price: 428100, location: "Trasacco, Accra", beds: 4, baths: 2, area: 2698, image: "/737793_h_133.jpg" },
-  { name: "Welvore Henix", price: 480500, location: "Spintex, Accra", beds: 4, baths: 2, area: 2882, image: "/Green-Park.jpg" },
-  { name: "Havasu Bave", price: 398600, location: "Tema Community 25", beds: 4, baths: 2, area: 2466, image: "/houses_and_land-5bfc3326c9e77c0051812eb3.jpg" },
+export const partners = [
+  {
+    initial: "F",
+    title: "Founder & Lead Civil Engineer",
+    text: "Assembly civil engineer — responsible for structural supervision, estimates, site compliance and estate planning. Vision bearer for Karon.",
+  },
+  {
+    initial: "A",
+    title: "Partner — Aaron (Erron)",
+    text: "Operations & client relations. Manages supply logistics, land acquisition channels and salon enterprise arm.",
+  },
 ];
 
-export const steps = [
-  { title: "Discover property", text: "Search by area, budget and size. Every listing is checked before it goes live.", icon: "/apartment-svgrepo-com.svg" },
-  { title: "Schedule a visit", text: "Pick a time that suits you and an agent will confirm the viewing.", icon: "/calender-svgrepo-com.svg" },
-  { title: "Inspect the property", text: "Walk through with the agent and ask for documents, surveys and history.", icon: "/secure-svgrepo-com.svg" },
-  { title: "Finalise the deal", text: "We handle negotiation and paperwork until you have the keys.", icon: "/offer-svgrepo-com.svg" },
+export const reasons = [
+  {
+    title: "Civil Engineering Expertise",
+    text: "Led by a practicing civil engineer at the Assembly. We understand soil, drainage, structural loads, and municipal approval pathways — not just sales.",
+  },
+  {
+    title: "Registered & Compliant",
+    text: "BN415671026 • Registered 15 Oct 2026 under Business Names Act 1962 (No.151). Office of the Registrar of Companies, Republic of Ghana.",
+  },
+  {
+    title: "Reliable Supply Chain",
+    text: "Direct sourcing, proper storage, verified brands. We weigh, count, and invoice transparently. Bulk orders with delivery coordination nationwide.",
+  },
+  {
+    title: "Affordable & Transparent",
+    text: "Competitive pricing without hidden costs. Detailed BOQs, clear land pricing per plot, and salon price lists displayed. No surprise fees.",
+  },
 ];
 
 export const footerColumns = [
-  { title: "Services", links: ["Buy property", "Sell property", "Rent property", "Find an agent"] },
-  { title: "Social", links: ["Twitter", "LinkedIn", "Facebook", "Instagram"] },
+  {
+    title: "Services",
+    links: [
+      { label: "Land sales", href: "#services" },
+      { label: "Building materials", href: "#services" },
+      { label: "Construction & estate", href: "#services" },
+      { label: "Hair & beauty salon", href: "#services" },
+    ],
+  },
+  {
+    title: "Social",
+    links: ["Twitter", "LinkedIn", "Facebook", "Instagram"].map((label) => ({ label, href: "#" })),
+  },
 ];
-
-export const formatPrice = (n) =>
-  new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);

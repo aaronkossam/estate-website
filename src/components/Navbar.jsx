@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { navLinks } from "../data";
+import Logo from "./Logo";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -17,7 +18,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-neutral-200 bg-white/90 backdrop-blur">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:px-8" aria-label="Main">
-        <a href="#home" className="font-display text-2xl">Rubble</a>
+        <Logo />
 
         <ul className="hidden items-center gap-8 text-sm lg:flex">
           {navLinks.map((l) => (
@@ -29,18 +30,11 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden items-center gap-3 lg:flex">
-          <a href="#contact" className="rounded-md bg-brand px-4 py-2 text-sm font-medium text-black transition-colors hover:bg-brand-dark">
-            Book a call
-          </a>
-        </div>
+        <a href="#contact" className="hidden rounded-md bg-brand px-4 py-2 text-sm font-medium text-black transition-colors hover:bg-brand-dark lg:block">
+          Get in touch
+        </a>
 
-        <button
-          className="-mr-2 p-2 lg:hidden"
-          onClick={() => setOpen(true)}
-          aria-label="Open menu"
-          aria-expanded={open}
-        >
+        <button className="-mr-2 p-2 lg:hidden" onClick={() => setOpen(true)} aria-label="Open menu" aria-expanded={open}>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
             <path d="M4 7h16M4 12h16M4 17h16" />
           </svg>
@@ -66,7 +60,7 @@ export default function Navbar() {
               ))}
             </ul>
             <a href="#contact" onClick={() => setOpen(false)} className="mt-auto rounded-md bg-brand py-3 text-center font-medium text-black">
-              Book a call
+              Get in touch
             </a>
           </div>
         </div>

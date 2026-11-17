@@ -1,12 +1,18 @@
-export default function SectionHeading({ eyebrow, title, text }) {
+export default function SectionHeading({ eyebrow, title, text, tone = "light", align = "center" }) {
+  const dark = tone === "dark";
+  const left = align === "left";
   return (
-    <div className="mx-auto mb-10 max-w-2xl text-center md:mb-14">
-      <span className="inline-flex items-center gap-2 rounded-full border border-neutral-300 px-3 py-1 text-xs font-medium uppercase tracking-wider text-neutral-600">
+    <div className={`mb-10 max-w-2xl md:mb-14 ${left ? "" : "mx-auto text-center"}`}>
+      <span
+        className={`inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium uppercase tracking-wider ${
+          dark ? "border-white/30 text-white/80" : "border-neutral-300 text-neutral-600"
+        }`}
+      >
         <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden="true" />
         {eyebrow}
       </span>
-      <h2 className="mt-4 font-display text-3xl leading-tight md:text-4xl">{title}</h2>
-      {text && <p className="mt-3 text-neutral-600">{text}</p>}
+      <h2 className={`mt-4 font-display text-3xl leading-tight md:text-5xl ${dark ? "text-white" : ""}`}>{title}</h2>
+      {text && <p className={`mt-4 ${dark ? "text-white/75" : "text-neutral-600"}`}>{text}</p>}
     </div>
   );
 }

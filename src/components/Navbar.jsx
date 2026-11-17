@@ -17,7 +17,7 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-neutral-200 bg-white/90 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-neutral-200 bg-white text-neutral-900 shadow-sm">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:px-8" aria-label="Main">
         <Logo />
 
@@ -35,15 +35,15 @@ export default function Navbar() {
           Get in touch
         </a>
 
-        <button className="-mr-2 p-2 lg:hidden" onClick={() => setOpen(true)} aria-label="Open menu" aria-expanded={open}>
+        <button className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-neutral-200 bg-neutral-50 text-neutral-900 lg:hidden" onClick={() => setOpen(true)} aria-label="Open menu" aria-expanded={open} aria-controls="mobile-navigation">
           <Icon name="menu" className="h-6 w-6" />
         </button>
       </nav>
 
       {open && (
-        <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true">
+        <div className="fixed inset-0 z-50 lg:hidden" id="mobile-navigation" role="dialog" aria-modal="true" aria-label="Navigation menu">
           <div className="absolute inset-0 bg-black/40" onClick={() => setOpen(false)} />
-          <div className="absolute right-0 top-0 flex h-full w-72 max-w-[85%] flex-col bg-white p-6 shadow-xl">
+          <div className="absolute right-0 top-0 flex h-full w-80 max-w-[85%] flex-col overflow-y-auto border-l border-neutral-200 bg-white p-6 text-neutral-900 shadow-xl">
             <button className="-mr-2 mb-6 self-end p-2" onClick={() => setOpen(false)} aria-label="Close menu">
               <Icon name="close" className="h-6 w-6" />
             </button>

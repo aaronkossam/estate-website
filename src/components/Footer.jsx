@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="lg:col-span-2">
           <Logo />
           <p className="mt-4 max-w-sm text-sm text-neutral-600">
-            A Ghanaian multidisciplinary business: land sales, building materials, construction and estate services, and a modern hair &amp; beauty studio.
+            Land sales, building materials, construction and estate services in Ghana.
           </p>
           {(contact.email || contact.phone) && (
             <p className="mt-4 text-sm text-neutral-600">

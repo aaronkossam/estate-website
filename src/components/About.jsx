@@ -4,21 +4,17 @@ import { brand, partners } from "../data";
 export default function About() {
   return (
     <section id="about" className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
-      <SectionHeading eyebrow="About the enterprise" title="Built on partnership, registered for trust." align="left" />
+      <SectionHeading eyebrow="About the enterprise" title="About Karon Estate." align="left" />
       <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
         <div className="space-y-5 leading-relaxed text-neutral-700">
           <p>
             <strong className="font-semibold text-neutral-900">{brand.full.toUpperCase()}</strong> is a Ghanaian
             multidisciplinary business registered on 15th October 2026 as {brand.registration} under the Registration
-            of Business Names Act, 1962 (No.151). On paper it is recorded as a Business Name — a common pathway for
-            Ghanaian startups — but in operation it functions as a partnership built on complementary expertise,
-            shared capital, and mutual accountability.
+            of Business Names Act, 1962 (No.151). Our team works across land sales, building supplies and construction.
           </p>
           <p>
-            Our ethos is simple: one roof for the entire building journey. We do not merely sell land; we help you
-            verify it, document it, estimate your build, supply authentic materials, and supervise execution. And
-            because homes are also about living beautifully, we extend our service culture into our modern hair &
-            beauty studio.
+            We help clients check land documents, estimate building costs, source materials and supervise
+            construction. Contact us to discuss what you need and arrange the next steps.
           </p>
         </div>
 

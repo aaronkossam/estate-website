@@ -12,12 +12,12 @@ export default function Reasons() {
         <SectionHeading
           tone="dark"
           eyebrow="Why choose Karon"
-          title="Engineering rigor meets local trust"
-          text="In a market crowded with unverified lands and counterfeit materials, we differentiate through verifiable credentials and documented processes."
+          title="Why work with us?"
+          text="Practical building experience, registered operations and clear pricing."
         />
         <ol className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {reasons.map((r, i) => (
-            <li key={r.title} className="flex flex-col rounded-2xl border border-white/15 bg-white/10 p-6 backdrop-blur-sm">
+            <li key={r.title} className="flex flex-col rounded-lg bg-black/40 p-6">
               <div className="flex items-center justify-between">
                 <span className="font-display text-sm text-brand">{String(i + 1).padStart(2, "0")}</span>
                 <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/25 text-white/80">

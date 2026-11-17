@@ -62,7 +62,6 @@ export default function Contact() {
               <option>Land purchase</option>
               <option>Building materials</option>
               <option>Construction &amp; estate services</option>
-              <option>Hair &amp; beauty salon</option>
             </select>
           </Field>
           <div className="sm:col-span-2">

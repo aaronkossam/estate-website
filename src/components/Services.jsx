@@ -6,7 +6,6 @@ const images = [
   "/houses_and_land-5bfc3326c9e77c0051812eb3.jpg",
   "/houses-1__FillWzEyMDAsODAwXQ.jpg",
   "/copper-beech-1-copy.webp",
-  "/contact-center-857x1000.jpg",
 ];
 
 export default function Services() {
@@ -41,7 +40,7 @@ export default function Services() {
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.4fr)] md:gap-12 md:px-8 lg:gap-20">
         <div className="min-w-0">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-neutral-500">What we do</p>
-          <h2 className="mt-4 font-display text-4xl md:text-5xl">Services for every step.</h2>
+          <h2 className="mt-4 font-display text-4xl md:text-5xl">What we do.</h2>
           <div className="mt-6" aria-live="polite" aria-atomic="true">
             <div className="flex items-center gap-3"><Icon name={service.icon} className="h-6 w-6 shrink-0" /><h3 className="font-display text-xl">{service.title}</h3></div>
             <p className="mt-4 text-sm leading-relaxed text-neutral-600">{service.text}</p>
@@ -57,14 +56,14 @@ export default function Services() {
           <ul id="services-carousel" data-active={active} ref={track} onScroll={updateActive} tabIndex={0} aria-label="Service image carousel" className="flex snap-x snap-mandatory gap-4 overflow-x-auto rounded-2xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden after:w-[22%] after:shrink-0 after:content-['']">
             {pillars.map((item, index) => (
               <li key={item.title} className="relative w-[78%] shrink-0 snap-start overflow-hidden rounded-2xl">
-                <img src={images[index]} alt={index === 3 ? "Customer care representative" : item.title} loading="lazy" className={`aspect-[4/5] w-full object-cover transition duration-500 sm:aspect-[4/4.5] ${active === index ? "" : "scale-105 blur-sm opacity-50"}`} />
+                <img src={images[index]} alt={item.title} loading="lazy" className={`aspect-[4/5] w-full object-cover transition duration-500 sm:aspect-[4/4.5] ${active === index ? "" : "scale-105 blur-sm opacity-50"}`} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-5 text-white md:p-7"><p className="text-xs uppercase tracking-widest text-white/75">Our services</p><p className="mt-2 font-display text-xl md:text-2xl">{item.title}</p></div>
               </li>
             ))}
           </ul>
-          <button type="button" onClick={() => goTo(active === pillars.length - 1 ? 0 : active + 1)} aria-label={active === pillars.length - 1 ? "Back to first service" : "View next service"} aria-controls="services-carousel" className="absolute left-[78%] top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white p-4 text-neutral-900 shadow-lg transition hover:bg-brand"><Icon name="right" /></button>
-          <p className="mt-3 text-xs text-neutral-500">Swipe to explore all four services.</p>
+          <button type="button" onClick={() => goTo(active === pillars.length - 1 ? 0 : active + 1)} aria-label={active === pillars.length - 1 ? "Back to first service" : "View next service"} aria-controls="services-carousel" className="absolute left-[78%] top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white p-4 text-neutral-900 shadow-md transition hover:bg-brand"><Icon name="right" /></button>
+          <p className="mt-3 text-xs text-neutral-500">Swipe to explore our services.</p>
         </div>
       </div>
     </section>

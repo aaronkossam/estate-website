@@ -1,3 +1,5 @@
+import { contact } from "../data";
+import Icon from "./Icon";
 import SectionHeading from "./SectionHeading";
 
 const field =
@@ -13,7 +15,17 @@ const Field = ({ label, id, children }) => (
 export default function Contact() {
   const onSubmit = (e) => {
     e.preventDefault();
-    // TODO: wire up to your backend / form service
+    const data = new FormData(e.currentTarget);
+    const subject = `Website enquiry: ${data.get("service") || "General enquiry"}`;
+    const body = [
+      `Name: ${data.get("name")}`,
+      `Email: ${data.get("email")}`,
+      `Phone: ${data.get("phone") || "Not provided"}`,
+      `Service: ${data.get("service") || "General enquiry"}`,
+      `Location: ${data.get("location") || "Not provided"}`,
+      "", data.get("message") || "",
+    ].join("\n");
+    window.location.href = `mailto:${contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
@@ -50,8 +62,9 @@ export default function Contact() {
               <textarea id="message" name="message" rows={4} placeholder="Tell us a bit about what you need" className={field} />
             </Field>
           </div>
+          <p className="text-sm text-neutral-600 sm:col-span-2">Email us at <a className="underline underline-offset-4" href={`mailto:${contact.email}`}>{contact.email}</a>. The button opens your email app with your enquiry ready to send.</p>
           <button type="submit" className="rounded-md bg-brand py-3 text-sm font-medium text-black transition-colors hover:bg-brand-dark sm:col-span-2">
-            Send enquiry
+            <span className="inline-flex items-center gap-2"><Icon name="email" /> Compose enquiry email</span>
           </button>
         </form>
       </div>

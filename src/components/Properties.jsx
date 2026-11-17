@@ -1,3 +1,4 @@
+import Icon from "./Icon";
 import SectionHeading from "./SectionHeading";
 
 const properties = [
@@ -21,7 +22,7 @@ export default function Properties() {
             <div className="flex flex-1 flex-col p-6">
               <h3 className="font-display text-2xl">{property.title}</h3>
               <p className="mt-3 flex-1 text-sm leading-relaxed text-neutral-600">{property.description}</p>
-              <a href="#contact" className="mt-6 flex items-center justify-between border-t border-neutral-200 pt-5 text-sm font-semibold hover:text-neutral-600">Enquire with our team <span aria-hidden="true">↗</span></a>
+              <a href="#contact" className="mt-6 flex items-center justify-between border-t border-neutral-200 pt-5 text-sm font-semibold hover:text-neutral-600">Enquire with our team <Icon name="arrow" /></a>
             </div>
           </li>
         ))}

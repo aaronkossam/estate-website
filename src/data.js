@@ -8,7 +8,7 @@ export const brand = {
 
 // Add the real contact details here. Empty values are hidden in the footer.
 export const contact = {
-  email: "",
+  email: "makonadu1997@gmail.com",
   phone: "",
 };
 
@@ -55,12 +55,12 @@ export const pillars = [
 
 export const partners = [
   {
-    initial: "F",
+    image: "/partner-placeholder.svg",
     title: "Founder & Lead Civil Engineer",
     text: "Assembly civil engineer — responsible for structural supervision, estimates, site compliance and estate planning. Vision bearer for Karon.",
   },
   {
-    initial: "A",
+    image: "/partner-placeholder.svg",
     title: "Partner — Aaron (Erron)",
     text: "Operations & client relations. Manages supply logistics, land acquisition channels and salon enterprise arm.",
   },

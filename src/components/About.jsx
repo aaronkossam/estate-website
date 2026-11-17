@@ -23,15 +23,9 @@ export default function About() {
         </div>
 
         <ul className="space-y-4">
-          {partners.map((p, i) => (
+          {partners.map((p) => (
             <li key={p.title} className="flex gap-4 rounded-2xl border border-neutral-200 p-5">
-              <span
-                className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl font-serif text-xl font-semibold ${
-                  i === 0 ? "bg-neutral-950 text-brand" : "bg-brand text-black"
-                }`}
-              >
-                {p.initial}
-              </span>
+              <img src={p.image} alt="Partner portrait placeholder" width="64" height="64" className="h-16 w-16 shrink-0 rounded-full bg-neutral-100 object-cover" loading="lazy" />
               <div>
                 <h3 className="font-display text-lg">{p.title}</h3>
                 <p className="mt-1 text-sm leading-relaxed text-neutral-600">{p.text}</p>

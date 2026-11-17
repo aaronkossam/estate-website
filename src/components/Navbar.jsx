@@ -1,3 +1,4 @@
+import Icon from "./Icon";
 import { useEffect, useState } from "react";
 import { navLinks } from "../data";
 import Logo from "./Logo";
@@ -35,9 +36,7 @@ export default function Navbar() {
         </a>
 
         <button className="-mr-2 p-2 lg:hidden" onClick={() => setOpen(true)} aria-label="Open menu" aria-expanded={open}>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
-            <path d="M4 7h16M4 12h16M4 17h16" />
-          </svg>
+          <Icon name="menu" className="h-6 w-6" />
         </button>
       </nav>
 
@@ -46,9 +45,7 @@ export default function Navbar() {
           <div className="absolute inset-0 bg-black/40" onClick={() => setOpen(false)} />
           <div className="absolute right-0 top-0 flex h-full w-72 max-w-[85%] flex-col bg-white p-6 shadow-xl">
             <button className="-mr-2 mb-6 self-end p-2" onClick={() => setOpen(false)} aria-label="Close menu">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
-                <path d="M6 6l12 12M18 6L6 18" />
-              </svg>
+              <Icon name="close" className="h-6 w-6" />
             </button>
             <ul className="space-y-1">
               {navLinks.map((l) => (

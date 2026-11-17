@@ -1,7 +1,7 @@
 export const brand = {
   name: "Karon Estate",
-  full: "Karon Estate Enterprise",
-  tagline: "Enterprise • Ghana",
+  full: "Karon Estate Enterprice",
+  tagline: "Enterprice • Ghana",
   registration: "BN415671026",
   registeredOn: "15 October 2026",
 };
@@ -14,6 +14,7 @@ export const contact = {
 
 export const navLinks = [
   { label: "Home", href: "#home" },
+  { label: "Properties", href: "#properties" },
   { label: "Services", href: "#services" },
   { label: "About", href: "#about" },
   { label: "Why Karon", href: "#why" },

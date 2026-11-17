@@ -6,18 +6,18 @@ export default function Services() {
   return (
     <section id="services" className="relative isolate mt-20 overflow-hidden py-20 text-white md:mt-28 md:py-28">
       <img src="/copper-beech-1-copy.webp" alt="" className="absolute inset-0 -z-20 h-full w-full object-cover" loading="lazy" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/90 via-black/65 to-black/90" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/75 via-black/50 to-black/80" />
 
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <SectionHeading
           tone="dark"
           eyebrow="What we do"
-          title="Four pillars. One standard."
+          title="Our services. Your next chapter."
           text="Integrated services designed to de-risk your building journey — from acquisition to finishing and personal care."
         />
         <ul className="grid gap-6 md:grid-cols-2">
           {pillars.map((p, i) => (
-            <li key={p.title} className="flex flex-col rounded-2xl bg-white p-6 text-neutral-900 shadow-xl md:p-8">
+            <li key={p.title} className="flex flex-col rounded-2xl bg-white/90 p-6 text-neutral-900 shadow-xl backdrop-blur-sm md:p-8">
               <div className="flex items-center justify-between">
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand text-black">
                   <Icon name={p.icon} className="h-5 w-5" />

@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Title: ["cal sans", "sans-serif"],
-        body: ["Cormorant Garamond", "serif"],
+        display: ['"Cal Sans"', "Inter", "system-ui", "sans-serif"],
+        body: ["Inter", "system-ui", "sans-serif"],
+        serif: ['"Cormorant Garamond"', "Georgia", "serif"],
       },
     },
   },

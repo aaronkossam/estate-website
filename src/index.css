@@ -1,5 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-body text-neutral-900 antialiased;
+  }
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-neutral-900;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

@@ -18,7 +18,7 @@ export default function Hero() {
             Verified homes, honest pricing and agents who pick up the phone.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
-            <a href="#properties" className="rounded-md bg-white px-5 py-3 text-sm font-medium text-black transition-colors hover:bg-neutral-200">
+            <a href="#properties" className="rounded-md bg-brand px-5 py-3 text-sm font-medium text-black transition-colors hover:bg-brand-dark">
               Browse properties
             </a>
             <a href="#contact" className="rounded-md border border-white/60 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-white/10">

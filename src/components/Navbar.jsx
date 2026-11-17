@@ -30,10 +30,7 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <button className="rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-neutral-100">
-            Sign in
-          </button>
-          <a href="#contact" className="rounded-md bg-black px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-neutral-800">
+          <a href="#contact" className="rounded-md bg-brand px-4 py-2 text-sm font-medium text-black transition-colors hover:bg-brand-dark">
             Book a call
           </a>
         </div>
@@ -68,7 +65,7 @@ export default function Navbar() {
                 </li>
               ))}
             </ul>
-            <a href="#contact" onClick={() => setOpen(false)} className="mt-auto rounded-md bg-black py-3 text-center font-medium text-white">
+            <a href="#contact" onClick={() => setOpen(false)} className="mt-auto rounded-md bg-brand py-3 text-center font-medium text-black">
               Book a call
             </a>
           </div>

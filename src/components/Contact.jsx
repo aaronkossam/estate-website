@@ -63,7 +63,7 @@ export default function Contact() {
               <textarea id="message" name="message" rows={4} placeholder="Tell us a bit about what you need" className={field} />
             </Field>
           </div>
-          <button type="submit" className="rounded-md bg-black py-3 text-sm font-medium text-white transition-colors hover:bg-neutral-800 sm:col-span-2">
+          <button type="submit" className="rounded-md bg-brand py-3 text-sm font-medium text-black transition-colors hover:bg-brand-dark sm:col-span-2">
             Send enquiry
           </button>
         </form>

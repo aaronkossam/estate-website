@@ -51,7 +51,6 @@ export const steps = [
 ];
 
 export const footerColumns = [
-  { title: "Company", links: ["Blog", "Careers", "About us", "Contact"] },
   { title: "Services", links: ["Buy property", "Sell property", "Rent property", "Find an agent"] },
   { title: "Social", links: ["Twitter", "LinkedIn", "Facebook", "Instagram"] },
 ];

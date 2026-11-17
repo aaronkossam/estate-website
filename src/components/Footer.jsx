@@ -3,7 +3,7 @@ import { footerColumns } from "../data";
 export default function Footer() {
   return (
     <footer className="border-t border-neutral-200">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:px-8 lg:grid-cols-5">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:px-8 lg:grid-cols-4">
         <div className="lg:col-span-2">
           <a href="#home" className="font-display text-2xl">Rubble</a>
           <p className="mt-3 max-w-sm text-sm text-neutral-600">

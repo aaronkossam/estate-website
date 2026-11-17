@@ -3,11 +3,38 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --surface: #ffffff;
+    --surface-glass: rgb(255 255 255 / 96%);
+    --heading-tracking: -0.025em;
+    --heading-leading: 1.2;
+  }
   html {
+    font-size: 100%;
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-white font-body text-neutral-900 antialiased;
+    @apply bg-white font-body antialiased;
+    color: var(--text-primary);
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: var(--heading-tracking);
+    line-height: var(--heading-leading);
+    text-wrap: balance;
+  }
+  button, input, select, textarea {
+    font-family: var(--font-body);
+  }
+  input[type="number"], output, [data-numeric] {
+    font-variant-numeric: tabular-nums;
   }
   section[id] {
     scroll-margin-top: 5rem;
@@ -20,5 +47,58 @@
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+}
+
+@layer components {
+  .type-brand {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: var(--heading-tracking);
+    line-height: 1.2;
+  }
+  .type-hero {
+    font-family: var(--font-display);
+    font-size: clamp(2.25rem, 5vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: var(--heading-tracking);
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+  .type-body { font-family: var(--font-body); font-size: 1rem; line-height: 1.55; }
+  .property-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    font-weight: 600;
+    letter-spacing: var(--heading-tracking);
+    line-height: 1.25;
+  }
+  .property-price {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    font-weight: 700;
+    line-height: 1.25;
+    font-variant-numeric: tabular-nums;
+  }
+  .property-meta, .property-specs {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: var(--text-secondary);
+  }
+  .property-specs, .mortgage-calculator { font-variant-numeric: tabular-nums; }
+  .filter-label { font-size: 0.875rem; font-weight: 600; color: var(--text-secondary); }
+  .filter-control {
+    @apply min-h-11 w-full rounded-lg border border-slate-300 bg-white px-3 py-2;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.55;
+    color: var(--text-primary);
+    font-variant-numeric: tabular-nums;
+  }
+  .map-glass {
+    background: var(--surface-glass);
+    color: var(--text-primary);
+    backdrop-filter: blur(16px);
   }
 }

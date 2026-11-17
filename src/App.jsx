@@ -1,3 +1,4 @@
+import WhatsAppChat from "./components/WhatsAppChat";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Properties from "./components/Properties";
@@ -20,6 +21,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppChat />
     </>
   );
 }

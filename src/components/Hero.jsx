@@ -8,13 +8,13 @@ export default function Hero() {
           className="h-[30rem] w-full object-cover md:h-[38rem] lg:h-[42rem]"
           fetchpriority="high"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/65 to-black/10" />
         <div className="absolute inset-x-0 bottom-0 p-6 md:p-12 lg:p-16">
-          <h1 className="max-w-3xl font-display text-4xl leading-[1.05] text-white md:text-6xl">
+          <h1 className="type-hero max-w-3xl text-white">
             One roof for your entire
-            <span className="block font-serif italic font-semibold">building journey.</span>
+            <span className="block">building journey.</span>
           </h1>
-          <p className="mt-4 max-w-xl text-base text-white/85 md:text-lg">
+          <p className="mt-4 max-w-xl text-base text-white md:text-lg">
             Litigation-free land, authentic building materials and engineer-led construction across Ghana.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">

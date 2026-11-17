@@ -10,6 +10,8 @@ export const brand = {
 export const contact = {
   email: "makonadu1997@gmail.com",
   phone: "",
+  // International WhatsApp digits, without + or spaces; awaiting number confirmation.
+  whatsapp: "",
 };
 
 export const navLinks = [

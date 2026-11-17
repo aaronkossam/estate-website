@@ -20,8 +20,8 @@ export default function Properties() {
               <span className="absolute bottom-5 left-5 text-xs font-medium uppercase tracking-widest text-white">{property.category}</span>
             </div>
             <div className="flex flex-1 flex-col p-6">
-              <h3 className="font-display text-2xl">{property.title}</h3>
-              <p className="mt-3 flex-1 text-sm leading-relaxed text-neutral-600">{property.description}</p>
+              <h3 className="property-title">{property.title}</h3>
+              <p className="mt-3 flex-1 property-meta">{property.description}</p>
               <a href="#contact" className="mt-6 flex items-center justify-between border-t border-neutral-200 pt-5 text-sm font-semibold hover:text-neutral-600">Enquire with our team <Icon name="arrow" /></a>
             </div>
           </li>

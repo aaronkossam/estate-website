@@ -24,7 +24,7 @@ export default function Reasons() {
                   <Icon name="arrow" className="h-4 w-4" />
                 </span>
               </div>
-              <h3 className="mt-10 font-display text-xl leading-snug">{r.title}</h3>
+              <h3 className="mt-10 font-display text-xl">{r.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-white/75">{r.text}</p>
             </li>
           ))}

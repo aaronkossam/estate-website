@@ -11,7 +11,7 @@ export default function SectionHeading({ eyebrow, title, text, tone = "light", a
         <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden="true" />
         {eyebrow}
       </span>
-      <h2 className={`mt-4 font-display text-3xl leading-tight md:text-5xl ${dark ? "text-white" : ""}`}>{title}</h2>
+      <h2 className={`mt-4 font-display text-3xl md:text-5xl ${dark ? "text-white" : ""}`}>{title}</h2>
       {text && <p className={`mt-4 ${dark ? "text-white/75" : "text-neutral-600"}`}>{text}</p>}
     </div>
   );

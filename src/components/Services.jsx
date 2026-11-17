@@ -1,74 +1,71 @@
 import { useRef, useState, useEffect } from "react";
-import SectionHeading from "./SectionHeading";
 import Icon from "./Icon";
 import { pillars } from "../data";
 
+const images = [
+  "/houses_and_land-5bfc3326c9e77c0051812eb3.jpg",
+  "/houses-1__FillWzEyMDAsODAwXQ.jpg",
+  "/copper-beech-1-copy.webp",
+  "/contact-center-857x1000.jpg",
+];
+
 export default function Services() {
   const track = useRef(null);
-  const [edges, setEdges] = useState({ start: true, end: false });
-  const updateEdges = () => {
+  const [active, setActive] = useState(0);
+  const service = pillars[active];
+  const updateActive = () => {
     const el = track.current;
-    if (el) setEdges({ start: el.scrollLeft <= 2, end: el.scrollLeft + el.clientWidth >= el.scrollWidth - 2 });
+    const step = el.firstElementChild.getBoundingClientRect().width + 16;
+    setActive(Math.min(pillars.length - 1, Math.max(0, Math.round(el.scrollLeft / step))));
+  };
+  const goTo = (index) => {
+    const el = track.current;
+    const step = el.firstElementChild.getBoundingClientRect().width + 16;
+    el.scrollTo({ left: step * index, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
   };
   useEffect(() => {
-    const observer = new ResizeObserver(updateEdges);
-    observer.observe(track.current);
-    updateEdges();
+    const el = track.current;
+    const observer = new ResizeObserver(() => {
+      // Preserve the selected service when the layout changes size.
+      const index = Number(el.dataset.active || 0);
+      el.scrollTo({ left: (el.firstElementChild.getBoundingClientRect().width + 16) * index, behavior: "instant" });
+    });
+    observer.observe(el);
     return () => observer.disconnect();
   }, []);
-  const move = (direction) => {
-    const el = track.current;
-    const card = el.firstElementChild;
-    el.scrollBy({ left: direction * (card.getBoundingClientRect().width + 24), behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
-  };
-  return (
-    <section id="services" className="relative isolate mt-20 overflow-hidden py-20 text-white md:mt-28 md:py-28">
-      <img src="/copper-beech-1-copy.webp" alt="" className="absolute inset-0 -z-20 h-full w-full object-cover" loading="lazy" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/75 via-black/50 to-black/80" />
 
-      <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <SectionHeading
-          tone="dark"
-          eyebrow="What we do"
-          title="Our services. Your next chapter."
-          text="Integrated services designed to de-risk your building journey — from acquisition to finishing and personal care."
-        />
-        <div className="mb-6 flex items-center justify-between gap-4">
-          <p className="text-sm text-white/80">Explore our services <span aria-hidden="true">—</span> swipe or use the arrows</p>
-          <div className="flex gap-3">
-            <button type="button" onClick={() => move(-1)} disabled={edges.start} aria-label="Previous services" aria-controls="services-carousel" className="rounded-full bg-white p-3 text-black transition hover:bg-brand disabled:cursor-not-allowed disabled:opacity-35"><Icon name="left" /></button>
-            <button type="button" onClick={() => move(1)} disabled={edges.end} aria-label="Next services" aria-controls="services-carousel" className="rounded-full bg-white p-3 text-black transition hover:bg-brand disabled:cursor-not-allowed disabled:opacity-35"><Icon name="right" /></button>
+  return (
+    <section id="services" aria-label="Our services" className="relative isolate mt-20 overflow-hidden py-16 md:mt-28 md:py-24">
+      <img src="/copper-beech-1-copy.webp" alt="" className="absolute inset-0 -z-20 h-full w-full object-cover opacity-10" loading="lazy" />
+      <div className="absolute inset-0 -z-10 bg-white/85" />
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.4fr)] md:gap-12 md:px-8 lg:gap-20">
+        <div className="min-w-0">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-neutral-500">What we do</p>
+          <h2 className="mt-4 font-display text-4xl md:text-5xl">Services for every step.</h2>
+          <div className="mt-6" aria-live="polite" aria-atomic="true">
+            <div className="flex items-center gap-3"><Icon name={service.icon} className="h-6 w-6 shrink-0" /><h3 className="font-display text-xl">{service.title}</h3></div>
+            <p className="mt-4 text-sm leading-relaxed text-neutral-600">{service.text}</p>
+          </div>
+          <a href="#contact" className="mt-6 inline-flex items-center gap-5 rounded-md bg-neutral-950 px-5 py-3 text-sm font-medium text-white transition hover:bg-neutral-700">Learn more <Icon name="arrow" /></a>
+          <div className="mt-8 flex items-center gap-4">
+            <button type="button" onClick={() => goTo(active - 1)} disabled={active === 0} aria-label="Previous service" aria-controls="services-carousel" className="rounded-full bg-white p-3 shadow-sm disabled:cursor-not-allowed disabled:opacity-30"><Icon name="left" /></button>
+            <span className="text-xs tabular-nums text-neutral-500">{String(active + 1).padStart(2, "0")} / {String(pillars.length).padStart(2, "0")}</span>
+            <button type="button" onClick={() => goTo(active + 1)} disabled={active === pillars.length - 1} aria-label="Next service" aria-controls="services-carousel" className="rounded-full bg-white p-3 shadow-sm disabled:cursor-not-allowed disabled:opacity-30"><Icon name="right" /></button>
           </div>
         </div>
-        <ul id="services-carousel" ref={track} onScroll={updateEdges} tabIndex={0} aria-label="Our services" className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          {pillars.map((p, i) => (
-            <li key={p.title} className="flex w-[88%] shrink-0 snap-start flex-col sm:w-[70%] lg:w-[42%] rounded-2xl bg-white/90 p-6 text-neutral-900 shadow-xl backdrop-blur-sm md:p-8">
-              <div className="flex items-center justify-between">
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand text-black">
-                  <Icon name={p.icon} className="h-5 w-5" />
-                </span>
-                <div className="flex items-center gap-2">
-                  {p.badge && (
-                    <span className="rounded-full bg-brand px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-wider text-black">
-                      {p.badge}
-                    </span>
-                  )}
-                  <span className="font-display text-sm text-neutral-400">{String(i + 1).padStart(2, "0")}</span>
-                </div>
-              </div>
-              <h3 className="mt-8 font-display text-2xl leading-snug">{p.title}</h3>
-              <p className="mt-1 text-sm text-neutral-500">{p.subtitle}</p>
-              <p className="mt-4 leading-relaxed text-neutral-700">{p.text}</p>
-              <ul className="mt-6 flex flex-wrap gap-2">
-                {p.tags.map((t) => (
-                  <li key={t} className="rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs text-neutral-700">
-                    {t}
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
+        <div className="relative min-w-0">
+          <ul id="services-carousel" data-active={active} ref={track} onScroll={updateActive} tabIndex={0} aria-label="Service image carousel" className="flex snap-x snap-mandatory gap-4 overflow-x-auto rounded-2xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden after:w-[22%] after:shrink-0 after:content-['']">
+            {pillars.map((item, index) => (
+              <li key={item.title} className="relative w-[78%] shrink-0 snap-start overflow-hidden rounded-2xl">
+                <img src={images[index]} alt={index === 3 ? "Customer care representative" : item.title} loading="lazy" className={`aspect-[4/5] w-full object-cover transition duration-500 sm:aspect-[4/4.5] ${active === index ? "" : "scale-105 blur-sm opacity-50"}`} />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-5 text-white md:p-7"><p className="text-xs uppercase tracking-widest text-white/75">Our services</p><p className="mt-2 font-display text-xl md:text-2xl">{item.title}</p></div>
+              </li>
+            ))}
+          </ul>
+          <button type="button" onClick={() => goTo(active === pillars.length - 1 ? 0 : active + 1)} aria-label={active === pillars.length - 1 ? "Back to first service" : "View next service"} aria-controls="services-carousel" className="absolute left-[78%] top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white p-4 text-neutral-900 shadow-lg transition hover:bg-brand"><Icon name="right" /></button>
+          <p className="mt-3 text-xs text-neutral-500">Swipe to explore all four services.</p>
+        </div>
       </div>
     </section>
   );
